@@ -1,0 +1,327 @@
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #087f23 0%,
+    #0a8f2c 50%,
+    #056b1d 100%
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 20px;
+  box-sizing: border-box;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* Círculos decorativos */
+
+.home-container::before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  top: -150px;
+  left: -120px;
+}
+
+.home-container::after {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  bottom: -250px;
+  right: -150px;
+}
+
+/* TARJETA */
+
+.home-card {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 520px;
+
+  background: rgba(255, 255, 255, 0.97);
+
+  border-radius: 28px;
+
+  padding: 45px 45px 40px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.25);
+
+  animation: aparecer 0.6s ease;
+}
+
+/* ANIMACIÓN */
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* LOGO */
+
+.logo-circle {
+  width: 105px;
+  height: 105px;
+
+  margin: 0 auto 22px;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #e8f5e9
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 52px;
+
+  box-shadow:
+    0 8px 20px rgba(8, 127, 35, 0.25);
+
+  border: 4px solid #e8f5e9;
+}
+
+/* TITULO */
+
+.home-card h1 {
+  margin: 0;
+
+  color: #087f23;
+
+  font-size: 34px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.home-card h2 {
+  margin: 8px 0 18px;
+
+  color: #3b4a3e;
+
+  font-size: 17px;
+
+  font-weight: 600;
+}
+
+/* DESCRIPCIÓN */
+
+.description {
+  margin: 0 auto 30px;
+
+  max-width: 390px;
+
+  color: #64748b;
+
+  font-size: 15px;
+
+  line-height: 23px;
+}
+
+/* BOTONES */
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 13px;
+
+  width: 100%;
+}
+
+/* ESTILO GENERAL */
+
+.buttons-container button {
+  width: 100%;
+
+  height: 54px;
+
+  border-radius: 13px;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    background 0.2s;
+}
+
+/* LOGIN */
+
+.login-button {
+  background: #087f23;
+
+  color: white;
+
+  border: 2px solid #087f23;
+
+  box-shadow:
+    0 6px 15px rgba(8, 127, 35, 0.25);
+}
+
+.login-button:hover {
+  background: #06691d;
+
+  border-color: #06691d;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 20px rgba(8, 127, 35, 0.3);
+}
+
+/* REGISTRO */
+
+.register-button {
+  background: white;
+
+  color: #087f23;
+
+  border: 2px solid #087f23;
+}
+
+.register-button:hover {
+  background: #e8f5e9;
+
+  transform: translateY(-2px);
+}
+
+/* INFORMACIÓN */
+
+.info-container {
+  margin-top: 28px;
+
+  padding: 16px 18px;
+
+  border-radius: 14px;
+
+  background: #f0fdf4;
+
+  border: 1px solid #d1fae5;
+}
+
+.info-title {
+  color: #087f23;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  margin-bottom: 5px;
+}
+
+.info-container p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  line-height: 18px;
+}
+
+/* FOOTER */
+
+footer {
+  position: relative;
+
+  z-index: 2;
+
+  margin-top: 22px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 3px;
+
+  color: white;
+
+  font-size: 12px;
+}
+
+footer strong {
+  font-size: 13px;
+}
+
+footer span {
+  color: #c9f5d1;
+  font-size: 11px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+  .home-container {
+    padding: 20px 15px;
+  }
+
+  .home-card {
+    padding: 35px 25px 30px;
+
+    border-radius: 22px;
+  }
+
+  .logo-circle {
+    width: 90px;
+    height: 90px;
+
+    font-size: 45px;
+
+    margin-bottom: 18px;
+  }
+
+  .home-card h1 {
+    font-size: 28px;
+  }
+
+  .home-card h2 {
+    font-size: 15px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .buttons-container button {
+    height: 52px;
+  }
+}

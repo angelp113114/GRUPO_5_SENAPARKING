@@ -1,0 +1,330 @@
+/* =========================================================
+   REPORTES RECIBIDOS
+========================================================= */
+
+.rr-container {
+    width: 100%;
+    min-height: 100vh;
+
+    box-sizing: border-box;
+
+    padding: 35px;
+
+    background: #087f23;
+
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.rr-header {
+    width: 100%;
+    box-sizing: border-box;
+
+    background: #fff;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+}
+
+.rr-header h1 {
+    margin: 0 0 10px;
+
+    color: #087f23;
+
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.rr-header p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   CONTENIDO
+========================================================= */
+
+.rr-content {
+    width: 100%;
+    box-sizing: border-box;
+
+    background: #fff;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+}
+
+
+/* =========================================================
+   LISTA
+========================================================= */
+
+.rr-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   TARJETA DE REPORTE
+========================================================= */
+
+.rr-card {
+    background: #fff;
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+    border-left: 6px solid #087f23;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .10);
+
+    transition: .3s;
+}
+
+.rr-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .14);
+}
+
+
+/* =========================================================
+   CABECERA REPORTE
+========================================================= */
+
+.rr-card-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.rr-card-header h2 {
+    margin: 0;
+
+    color: #087f23;
+
+    font-size: 22px;
+}
+
+.rr-id {
+    background: #e8f5ea;
+
+    color: #087f23;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   INFORMACIÓN
+========================================================= */
+
+.rr-info {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.rr-info-item {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    background: #f8fafc;
+
+    padding: 15px;
+
+    border-radius: 12px;
+}
+
+.rr-info-item strong {
+    color: #087f23;
+
+    font-size: 14px;
+}
+
+.rr-info-item span {
+    color: #444;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   SECCIONES
+========================================================= */
+
+.rr-section {
+    margin-top: 20px;
+}
+
+.rr-section h3 {
+    margin: 0 0 10px;
+
+    color: #087f23;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   DESCRIPCIÓN
+========================================================= */
+
+.rr-description {
+    background: #f8fafc;
+
+    border-radius: 12px;
+
+    padding: 16px;
+
+    color: #444;
+
+    line-height: 1.6;
+
+    white-space: pre-wrap;
+
+    border-left: 4px solid #087f23;
+}
+
+
+/* =========================================================
+   RESPUESTA
+========================================================= */
+
+.rr-response {
+    margin-top: 25px;
+}
+
+.rr-response .rr-description {
+    background: #eef9f0;
+}
+
+
+/* =========================================================
+   SIN REPORTES
+========================================================= */
+
+.rr-empty {
+    text-align: center;
+
+    padding: 55px 20px;
+
+    background: #f8fafc;
+
+    border-radius: 14px;
+}
+
+.rr-empty span {
+    display: block;
+
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+.rr-empty h2 {
+    margin: 0 0 8px;
+
+    color: #087f23;
+
+    font-size: 22px;
+}
+
+.rr-empty p {
+    margin: 0;
+
+    color: #777;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .rr-container {
+        padding: 20px 15px;
+    }
+
+    .rr-header {
+        padding: 25px 15px;
+    }
+
+    .rr-header h1 {
+        font-size: 26px;
+    }
+
+    .rr-content {
+        padding: 15px;
+    }
+
+    .rr-card {
+        padding: 20px;
+
+        border-left-width: 5px;
+    }
+
+    .rr-card-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .rr-card-header h2 {
+        font-size: 20px;
+    }
+
+    .rr-info {
+        grid-template-columns: 1fr;
+    }
+
+}

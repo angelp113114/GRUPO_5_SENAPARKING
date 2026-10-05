@@ -1,0 +1,1 @@
+declare module 'react-native-webview' { import * as React from 'react'; import {ViewProps} from 'react-native'; export const WebView: React.ComponentType<ViewProps & {source?:any;startInLoadingState?:boolean}>; }

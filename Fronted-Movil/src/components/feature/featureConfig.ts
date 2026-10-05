@@ -1,0 +1,32 @@
+export const menus: any = {
+  aprendiz: [
+    ['home', 'Inicio', '⌂'],
+    ['carnet', 'Visualizar carnet', '▣'],
+    ['request', 'Petición de carnet', '▤'],
+    ['update', 'Actualizar datos', '✎'],
+    ['myVehicles', 'Mis vehículos', '🚗'],
+    ['support', 'Soporte técnico', '⚙'],
+    ['notifications', 'Notificaciones', '🔔'],
+    ['manual', 'Manual del aprendiz', '?'],
+  ],
+  guarda: [
+    ['home', 'Inicio', '⌂'],
+    ['scanner', 'Escanear QR', '⌗'],
+    ['records', 'Entrada y salida', '↕'],
+    ['manual', 'Manual del guarda', '?'],
+  ],
+  administrador: [
+    ['home', 'Inicio', '⌂'],
+    ['pending', 'Peticiones de carnet', '✓'],
+    ['updateRequests', 'Peticiones actualización', '↻'],
+    ['vehicles', 'Vehículos', '🚗'],
+    ['blocks', 'Bloqueos', '⛔'],
+    ['reports', 'Reportes solucionados', '▤'],
+    ['centers', 'Centros de formación', '⌖'],
+    ['docs', 'Tipos de documento', '▥'],
+    ['users', 'Usuarios', '♟'],
+    ['supportAdmin', 'Soporte técnico', '◉'],
+    ['records', 'Entradas y salidas', '↕'],
+    ['manual', 'Manual de administrador', '?'],
+  ],
+};

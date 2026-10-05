@@ -1,0 +1,416 @@
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   PÁGINA
+========================= */
+
+.es-container {
+  width: 100%;
+  min-height: calc(100vh - 75px);
+
+  padding: 40px 20px;
+
+  background: #087f23;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #263238;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.es-header {
+  width: 100%;
+  max-width: 1200px;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+  border: 1px solid #dce5df;
+
+  padding: 35px 30px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+  margin-bottom: 25px;
+
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* =========================
+   TITULO
+========================= */
+
+.es-header h1 {
+  margin: 0 0 10px;
+
+  color: #087f23;
+
+  font-size: 28px;
+  font-weight: 800;
+}
+
+/* =========================
+   DESCRIPCIÓN
+========================= */
+
+.es-header p {
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 15px;
+}
+
+/* =========================
+   LOADING
+========================= */
+
+.es-loading {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 0 20px;
+
+  padding: 12px 18px;
+
+  background: #ffffff;
+
+  border-radius: 8px;
+
+  border-left: 5px solid #087f23;
+
+  color: #087f23;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-align: center;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   ERROR
+========================= */
+
+.es-error {
+  width: 100%;
+  max-width: 1200px;
+
+  margin-bottom: 20px;
+
+  padding: 14px 18px;
+
+  background: #ffffff;
+
+  color: #d32f2f;
+
+  border: 1px solid #ffcdd2;
+  border-left: 5px solid #d32f2f;
+
+  border-radius: 8px;
+
+  text-align: center;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.es-card {
+  width: 100%;
+  max-width: 1200px;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  border: 1px solid #dce5df;
+
+  padding: 25px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+  overflow-x: auto;
+}
+
+/* =========================
+   TABLA
+========================= */
+
+.es-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  min-width: 850px;
+
+  background: #ffffff;
+}
+
+/* =========================
+   CABECERA TABLA
+========================= */
+
+.es-table th {
+  background: #087f23;
+
+  color: #ffffff;
+
+  padding: 15px 12px;
+
+  text-align: left;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  border-bottom: 2px solid #066a1d;
+}
+
+/* Bordes redondeados superiores */
+
+.es-table th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+.es-table th:last-child {
+  border-radius: 0 8px 0 0;
+}
+
+/* =========================
+   CELDAS
+========================= */
+
+.es-table td {
+  padding: 14px 12px;
+
+  border-bottom: 1px solid #e5ebe7;
+
+  color: #455a64;
+
+  font-size: 13px;
+
+  vertical-align: middle;
+}
+
+/* =========================
+   FILAS
+========================= */
+
+.es-table tbody tr {
+  transition: 0.2s ease;
+}
+
+.es-table tbody tr:hover {
+  background: #f8faf8;
+}
+
+/* =========================
+   ID
+========================= */
+
+.es-table td:first-child {
+  color: #087f23;
+
+  font-weight: 700;
+}
+
+/* =========================
+   ESTADO DENTRO
+========================= */
+
+.estado-verde {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 6px 10px;
+
+  background: #e8f5e9;
+
+  color: #087f23;
+
+  border: 1px solid #b7dfbd;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+/* =========================
+   ESTADO FUERA
+========================= */
+
+.estado-rojo {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 6px 10px;
+
+  background: #ffebee;
+
+  color: #d32f2f;
+
+  border: 1px solid #ffcdd2;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+/* =========================
+   SIN REGISTROS
+========================= */
+
+.es-empty {
+  padding: 40px 20px !important;
+
+  color: #607d8b !important;
+
+  text-align: center !important;
+
+  font-size: 14px !important;
+
+  background: #f8faf8;
+}
+
+/* =========================
+   ANIMACIÓN
+========================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .es-container {
+    padding: 30px 15px;
+  }
+
+  .es-header {
+    padding: 30px 20px;
+  }
+
+  .es-header h1 {
+    font-size: 24px;
+  }
+
+  .es-card {
+    padding: 18px;
+  }
+
+}
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 600px) {
+
+  .es-container {
+    padding: 20px 10px;
+  }
+
+  .es-header {
+    padding: 25px 15px;
+
+    border-radius: 10px;
+  }
+
+  .es-header h1 {
+    font-size: 20px;
+
+    line-height: 1.4;
+  }
+
+  .es-header p {
+    font-size: 13px;
+
+    line-height: 1.5;
+  }
+
+  .es-card {
+    padding: 12px;
+
+    border-radius: 10px;
+  }
+
+  .es-table {
+    min-width: 850px;
+  }
+
+  .es-table th {
+    padding: 12px 10px;
+
+    font-size: 12px;
+  }
+
+  .es-table td {
+    padding: 12px 10px;
+
+    font-size: 12px;
+  }
+
+  .estado-verde,
+  .estado-rojo {
+    font-size: 11px;
+
+    padding: 5px 8px;
+  }
+
+}
+
+/* =========================
+   PANTALLA MUY PEQUEÑA
+========================= */
+
+@media (max-width: 400px) {
+
+  .es-container {
+    padding: 15px 8px;
+  }
+
+  .es-header h1 {
+    font-size: 18px;
+  }
+
+  .es-card {
+    padding: 8px;
+  }
+
+}

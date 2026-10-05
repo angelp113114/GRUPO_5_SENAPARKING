@@ -1,0 +1,2 @@
+import React from 'react'; import {ActivityIndicator,Text,TouchableOpacity} from 'react-native'; import {common} from '../theme';
+export default function Button({title,onPress,loading=false,outline=false}:{title:string,onPress:()=>void,loading?:boolean,outline?:boolean}){return <TouchableOpacity disabled={loading} onPress={onPress} style={outline?common.outline:common.button}>{loading?<ActivityIndicator/>:<Text style={outline?common.outlineText:common.buttonText}>{title}</Text>}</TouchableOpacity>}

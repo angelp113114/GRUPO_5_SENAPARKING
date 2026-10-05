@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   PÁGINA
+========================= */
+
+.inicio-admin {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+
+  padding: 40px 25px;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #263238;
+
+  background: #087f23;
+}
+
+/* =========================
+   CONTENEDOR PRINCIPAL
+========================= */
+
+.inicio-admin > * {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================
+   BANNER
+========================= */
+
+.admin-banner {
+  background: #ffffff;
+
+  color: #263238;
+
+  padding: 40px;
+
+  border-radius: 14px;
+  border: 1px solid #dce5df;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+  margin-bottom: 25px;
+}
+
+.admin-banner h1 {
+  margin: 0 0 12px;
+
+  color: #087f23;
+
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.admin-banner p {
+  margin: 0;
+
+  max-width: 700px;
+
+  color: #607d8b;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.banner-icon {
+  font-size: 85px;
+
+  color: #087f23;
+
+  
+
+  flex-shrink: 0;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.admin-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 20px;
+
+  margin-bottom: 25px;
+}
+
+/* =========================
+   TARJETAS
+========================= */
+
+.admin-card {
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+  border-radius: 10px;
+
+  padding: 30px 25px;
+
+  text-align: center;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+
+  transition: 0.2s ease;
+
+  border-top: 5px solid #087f23;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.13);
+}
+
+.admin-icon {
+  font-size: 45px;
+
+  color: #087f23;
+
+  margin-bottom: 15px;
+}
+
+.admin-card h3 {
+  margin: 0 0 10px;
+
+  color: #263238;
+
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.admin-card p {
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =========================
+   INFORMACIÓN
+========================= */
+
+.admin-info {
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+  border-radius: 10px;
+
+  padding: 30px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.admin-info h2 {
+  margin: 0 0 20px;
+
+  color: #087f23;
+
+  font-size: 21px;
+  font-weight: 800;
+
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #dce5df;
+}
+
+.admin-info ul {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.admin-info li {
+  padding: 14px 16px;
+
+  margin-bottom: 10px;
+
+  background: #f8faf8;
+
+  border: 1px solid #e5ebe7;
+  border-radius: 8px;
+
+  color: #455a64;
+
+  font-size: 14px;
+
+  transition: 0.2s ease;
+}
+
+.admin-info li:last-child {
+  margin-bottom: 0;
+}
+
+.admin-info li:hover {
+  background: #e8f5eb;
+
+  border-color: #b8d9c0;
+
+  transform: translateX(5px);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .admin-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admin-banner {
+    padding: 30px;
+  }
+
+  .admin-banner h1 {
+    font-size: 30px;
+  }
+
+  .banner-icon {
+    font-size: 70px;
+  }
+}
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 650px) {
+
+  .inicio-admin {
+    padding: 25px 15px;
+  }
+
+  .admin-banner {
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    gap: 20px;
+  }
+
+  .admin-banner h1 {
+    font-size: 26px;
+  }
+
+  .admin-banner p {
+    font-size: 14px;
+  }
+
+  .banner-icon {
+    font-size: 60px;
+  }
+
+  .admin-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .admin-card {
+    padding: 25px 20px;
+  }
+
+  .admin-info {
+    padding: 22px 18px;
+  }
+
+  .admin-info h2 {
+    font-size: 19px;
+  }
+
+  .admin-info li {
+    font-size: 13px;
+  }
+}
+
+/* =========================
+   MÓVIL PEQUEÑO
+========================= */
+
+@media (max-width: 400px) {
+
+  .inicio-admin {
+    padding: 18px 10px;
+  }
+
+  .admin-banner {
+    padding: 25px 15px;
+  }
+
+  .admin-banner h1 {
+    font-size: 23px;
+  }
+
+  .admin-card {
+    padding: 22px 15px;
+  }
+
+  .admin-icon {
+    font-size: 40px;
+  }
+
+  .admin-card h3 {
+    font-size: 19px;
+  }
+}

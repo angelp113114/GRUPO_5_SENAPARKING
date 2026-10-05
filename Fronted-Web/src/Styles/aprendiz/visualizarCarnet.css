@@ -1,0 +1,904 @@
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   PÁGINA PRINCIPAL
+========================= */
+
+.visualizar-carnet-container {
+  width: 100%;
+  min-height: calc(100vh - 75px);
+  padding: 35px 20px;
+
+  background: #087f23;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #263238;
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.visualizar-carnet-card {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.visualizar-carnet-header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 22px;
+  padding: 25px 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+  border-radius: 14px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.visualizar-carnet-label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #087f23;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.visualizar-carnet-header h1 {
+  margin: 0 0 7px;
+
+  color: #087f23;
+
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.visualizar-carnet-header p {
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =========================
+   CONTADOR
+========================= */
+
+.visualizar-carnet-contador {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #eaf7ef;
+
+  border: 1px solid #cce6d3;
+  border-radius: 50%;
+
+  color: #087f23;
+
+  font-size: 16px;
+  font-weight: 800;
+}
+
+/* =========================
+   ERROR
+========================= */
+
+.visualizar-carnet-error {
+  width: 100%;
+
+  margin-bottom: 20px;
+  padding: 14px 16px;
+
+  background: #fff4f4;
+
+  border-left: 5px solid #c0392b;
+  border-radius: 8px;
+
+  color: #a93226;
+
+  font-size: 14px;
+}
+
+/* =========================
+   CARGANDO
+========================= */
+
+.visualizar-carnet-loading {
+  width: 100%;
+
+  padding: 50px 25px;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.visualizar-carnet-loading h2 {
+  margin: 0 0 8px;
+
+  color: #087f23;
+
+  font-size: 21px;
+}
+
+.visualizar-carnet-loading p {
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 13px;
+}
+
+/* =========================
+   LISTA DE CARNETS
+========================= */
+
+.carnets-lista {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 22px;
+}
+
+/* =========================
+   CARNET INDIVIDUAL
+========================= */
+
+.carnet-item {
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+  border-radius: 14px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   HEADER DEL CARNET
+========================= */
+
+.carnet-item-header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 16px 20px;
+
+  background: #f8faf8;
+
+  border-bottom: 1px solid #dce5df;
+}
+
+.carnet-item-header h2 {
+  margin: 4px 0 0;
+
+  color: #087f23;
+
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.carnet-numero {
+  display: block;
+
+  color: #607d8b;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+}
+
+/* =========================
+   ESTADO
+========================= */
+
+.carnet-estado {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 70px;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.carnet-estado.activo {
+  background: #27ae60;
+}
+
+.carnet-estado.otro {
+  background: #78909c;
+}
+
+.carnet-estado.vencido {
+  background: #f39c12;
+}
+
+.carnet-estado.bloqueado {
+  background: #c0392b;
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+.carnet-contenido {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 100px minmax(0, 1fr) 220px;
+
+  align-items: center;
+
+  gap: 22px;
+
+  padding: 25px;
+}
+
+/* =========================
+   FOTO APRENDIZ
+========================= */
+
+.carnet-foto-aprendiz {
+  width: 100px;
+  height: 120px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #eaf7ef;
+
+  border: 1px solid #dce5df;
+  border-radius: 8px;
+}
+
+.carnet-foto-aprendiz img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.carnet-sin-foto {
+  width: 100%;
+  height: 100%;
+
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px;
+
+  background: #eaf7ef;
+
+  color: #78909c;
+
+  font-size: 11px;
+
+  text-align: center;
+}
+
+.carnet-sin-foto.mostrar {
+  display: flex;
+}
+
+/* =========================
+   DATOS APRENDIZ
+========================= */
+
+.carnet-datos {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.carnet-datos .dato {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+
+  min-width: 0;
+}
+
+.carnet-datos .dato strong {
+  color: #087f23;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+}
+
+.carnet-datos .dato span {
+  color: #455a64;
+
+  font-size: 13px;
+
+  word-break: break-word;
+}
+
+/* =========================
+   QR
+========================= */
+
+.carnet-qr {
+  width: 220px;
+
+  min-height: 230px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 15px;
+
+  background: #f8faf8;
+
+  border: 1px solid #dce5df;
+
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+.carnet-qr h3 {
+  margin: 0 0 10px;
+
+  color: #087f23;
+
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.carnet-qr img {
+  width: 150px;
+  height: 150px;
+
+  display: block;
+
+  padding: 5px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+
+  border-radius: 7px;
+
+  object-fit: contain;
+}
+
+.carnet-qr small {
+  width: 100%;
+
+  margin-top: 10px;
+  padding: 6px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+  border-radius: 5px;
+
+  color: #607d8b;
+
+  font-size: 9px;
+
+  line-height: 1.3;
+
+  word-break: break-all;
+}
+
+.qr-sin-imagen {
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eeeeee;
+
+  border-radius: 7px;
+
+  color: #78909c;
+
+  font-size: 12px;
+
+  text-align: center;
+}
+
+/* =========================
+   VEHÍCULO
+========================= */
+
+.carnet-vehiculo {
+  width: 100%;
+
+  margin: 0;
+
+  padding: 18px 25px;
+
+  background: #ffffff;
+
+  border-top: 1px solid #dce5df;
+}
+
+.carnet-vehiculo h3 {
+  margin: 0 0 14px;
+
+  color: #087f23;
+
+  font-size: 15px;
+  font-weight: 800;
+}
+
+/* =========================
+   CONTENIDO VEHÍCULO
+========================= */
+
+.vehiculo-contenido {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 180px minmax(0, 1fr);
+
+  gap: 20px;
+
+  align-items: start;
+}
+
+/* =========================
+   FOTO VEHÍCULO
+========================= */
+
+.carnet-foto-vehiculo {
+  width: 180px;
+  height: 125px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eaf7ef;
+
+  border: 1px solid #dce5df;
+
+  border-radius: 8px;
+}
+
+.carnet-foto-vehiculo img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.vehiculo-sin-foto {
+  width: 100%;
+  height: 100%;
+
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+
+  color: #78909c;
+
+  font-size: 11px;
+
+  text-align: center;
+}
+
+.vehiculo-sin-foto.mostrar {
+  display: flex;
+}
+
+/* =========================
+   DATOS VEHÍCULO
+========================= */
+
+.vehiculo-datos-carnet {
+  min-width: 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+
+  gap: 10px 20px;
+}
+
+.vehiculo-datos-carnet > div {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+
+  padding: 8px 10px;
+
+  background: #f8faf8;
+
+  border-radius: 6px;
+}
+
+.vehiculo-datos-carnet strong {
+  color: #087f23;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+}
+
+.vehiculo-datos-carnet span {
+  color: #455a64;
+
+  font-size: 13px;
+
+  word-break: break-word;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.carnet-footer {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 15px;
+
+  padding: 15px 25px;
+
+  background: #f8faf8;
+
+  border-top: 1px solid #dce5df;
+}
+
+.carnet-footer > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.carnet-footer strong {
+  color: #087f23;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+}
+
+.carnet-footer span {
+  color: #455a64;
+
+  font-size: 12px;
+
+  word-break: break-word;
+}
+
+/* =========================
+   VACÍO
+========================= */
+
+.visualizar-carnet-vacio {
+  width: 100%;
+
+  padding: 50px 20px;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.vacio-icono {
+  margin-bottom: 12px;
+
+  font-size: 38px;
+}
+
+.visualizar-carnet-vacio h3 {
+  margin: 0 0 8px;
+
+  color: #087f23;
+
+  font-size: 18px;
+}
+
+.visualizar-carnet-vacio p {
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 13px;
+}
+
+/* =========================
+   BOTÓN ACTUALIZAR
+========================= */
+
+.visualizar-carnet-recargar {
+  width: 100%;
+
+  margin-top: 20px;
+
+  padding: 12px;
+
+  background: #ffffff;
+
+  border: 2px solid #087f23;
+
+  border-radius: 8px;
+
+  color: #087f23;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.visualizar-carnet-recargar:hover {
+  background: #087f23;
+
+  color: #ffffff;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 850px) {
+
+  .carnet-contenido {
+    grid-template-columns: 90px minmax(0, 1fr);
+  }
+
+  .carnet-qr {
+    width: 100%;
+
+    grid-column: 1 / -1;
+
+    min-height: auto;
+  }
+
+  .carnet-qr img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .vehiculo-contenido {
+    grid-template-columns: 150px minmax(0, 1fr);
+  }
+
+  .carnet-foto-vehiculo {
+    width: 150px;
+  }
+}
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 600px) {
+
+  .visualizar-carnet-container {
+    padding: 15px 10px;
+  }
+
+  .visualizar-carnet-header {
+    padding: 20px;
+
+    border-radius: 10px;
+  }
+
+  .visualizar-carnet-header h1 {
+    font-size: 23px;
+  }
+
+  .visualizar-carnet-header p {
+    font-size: 12px;
+  }
+
+  .visualizar-carnet-contador {
+    width: 40px;
+    height: 40px;
+  }
+
+  .carnet-item-header {
+    padding: 13px 15px;
+  }
+
+  .carnet-item-header h2 {
+    font-size: 16px;
+  }
+
+  .carnet-contenido {
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 18px;
+
+    padding: 18px;
+  }
+
+  .carnet-foto-aprendiz {
+    width: 100px;
+    height: 120px;
+
+    margin: 0 auto;
+  }
+
+  .carnet-datos {
+    width: 100%;
+  }
+
+  .carnet-qr {
+    width: 100%;
+
+    min-height: auto;
+  }
+
+  .carnet-qr img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .carnet-vehiculo {
+    padding: 18px;
+  }
+
+  .vehiculo-contenido {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .carnet-foto-vehiculo {
+    width: 100%;
+    max-width: 280px;
+    height: 160px;
+
+    margin: 0 auto;
+  }
+
+  .vehiculo-datos-carnet {
+    width: 100%;
+
+    grid-template-columns: 1fr;
+  }
+
+  .carnet-footer {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+
+    padding: 15px 18px;
+  }
+
+  .visualizar-carnet-recargar {
+    margin-top: 15px;
+  }
+}
+
+/* =========================
+   PANTALLAS MUY PEQUEÑAS
+========================= */
+
+@media (max-width: 380px) {
+
+  .visualizar-carnet-header {
+    align-items: flex-start;
+  }
+
+  .visualizar-carnet-header h1 {
+    font-size: 20px;
+  }
+
+  .carnet-estado {
+    min-width: auto;
+
+    padding: 5px 8px;
+
+    font-size: 10px;
+  }
+
+  .carnet-item-header {
+    gap: 8px;
+  }
+
+  .carnet-foto-aprendiz {
+    width: 90px;
+    height: 110px;
+  }
+}

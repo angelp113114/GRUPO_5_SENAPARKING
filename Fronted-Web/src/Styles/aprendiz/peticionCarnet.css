@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   PÁGINA
+========================= */
+
+.peticion-container {
+  width: 100%;
+  min-height: calc(100vh - 75px);
+  padding: 40px 20px;
+  background: #087f23;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #263238;
+}
+
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.peticion-card {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #dce5df;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   CABECERA
+========================= */
+
+.peticion-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.peticion-header h1 {
+  margin: 0 0 10px;
+  color: #087f23;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.peticion-header h2 {
+  margin: 0 0 10px;
+  color: #087f23;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+.peticion-header p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #607d8b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.peticion-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+
+/* =========================
+   SECCIONES
+========================= */
+
+.peticion-section {
+  margin-bottom: 22px;
+  padding: 24px;
+  background: #f8faf8;
+  border: 1px solid #dce5df;
+  border-radius: 10px;
+}
+
+.peticion-section h3 {
+  margin: 0 0 20px;
+  color: #087f23;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.peticion-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+
+/* =========================
+   CAMPOS
+========================= */
+
+.peticion-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.peticion-group label {
+  color: #263238;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   INPUTS Y SELECT
+========================= */
+
+.peticion-group input,
+.peticion-group select {
+  width: 100%;
+  min-height: 45px;
+  padding: 11px 13px;
+
+  background: #ffffff;
+
+  border: 1px solid #cfd8d3;
+  border-radius: 8px;
+
+  outline: none;
+
+  color: #263238;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+
+/* =========================
+   FOCUS
+========================= */
+
+.peticion-group input:focus,
+.peticion-group select:focus {
+  border-color: #087f23;
+
+  box-shadow:
+    0 0 0 3px rgba(8, 127, 35, 0.08);
+}
+
+
+/* =========================
+   CAMPOS DESHABILITADOS
+========================= */
+
+.peticion-group input:disabled {
+  background: #eef2ef;
+
+  border-color: #cfd8d3;
+
+  color: #455a64;
+
+  font-weight: 600;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   ARCHIVOS
+========================= */
+
+.peticion-group input[type="file"] {
+  width: 100%;
+
+  min-height: auto;
+
+  padding: 10px;
+
+  background: #ffffff;
+
+  border: 1px solid #cfd8d3;
+
+  border-radius: 8px;
+
+  color: #455a64;
+
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+.peticion-group input[type="file"]:hover {
+  border-color: #087f23;
+}
+
+
+/* =========================
+   BOTÓN
+========================= */
+
+.peticion-button {
+  width: 100%;
+
+  min-height: 48px;
+
+  margin-top: 5px;
+
+  padding: 13px 20px;
+
+  border: 2px solid #087f23;
+
+  border-radius: 8px;
+
+  background: #087f23;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+/* =========================
+   HOVER BOTÓN
+========================= */
+
+.peticion-button:hover {
+  background: #ffffff;
+
+  color: #087f23;
+
+  border-color: #087f23;
+}
+
+
+/* =========================
+   BOTÓN DESHABILITADO
+========================= */
+
+.peticion-button:disabled {
+  background: #9e9e9e;
+
+  border-color: #9e9e9e;
+
+  color: #ffffff;
+
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 700px) {
+
+  .peticion-container {
+    padding: 25px 15px;
+  }
+
+  .peticion-card {
+    padding: 25px 20px;
+  }
+
+  .peticion-fields {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+}
+
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 480px) {
+
+  .peticion-container {
+    padding: 15px 10px;
+  }
+
+  .peticion-card {
+    padding: 22px 15px;
+    border-radius: 10px;
+  }
+
+  .peticion-header h1 {
+    font-size: 23px;
+  }
+
+  .peticion-header h2 {
+    font-size: 20px;
+  }
+
+  .peticion-header p {
+    font-size: 13px;
+  }
+
+  .peticion-section {
+    padding: 17px;
+    border-radius: 8px;
+  }
+
+  .peticion-section h3 {
+    font-size: 16px;
+  }
+
+  .peticion-group input,
+  .peticion-group select {
+    min-height: 43px;
+    font-size: 13px;
+  }
+
+  .peticion-button {
+    font-size: 14px;
+  }
+
+}

@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   PÁGINA
+========================= */
+
+.actualizar-page {
+  width: 100%;
+  min-height: calc(100vh - 75px);
+  padding: 40px 20px;
+  background: #087f23   ;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #263238;
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.actualizar-container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #dce5df;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   CABECERA
+========================= */
+
+.actualizar-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.actualizar-header span {
+  display: block;
+  margin-bottom: 8px;
+  color: #087f23;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.actualizar-header h2 {
+  margin: 0 0 10px;
+  color: #087f23;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.actualizar-header p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #607d8b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =========================
+   TIPO ACTUALIZACIÓN
+========================= */
+
+.tipo-actualizacion {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #f8faf8;
+  border: 1px solid #dce5df;
+  border-radius: 10px;
+}
+
+.tipo-actualizacion label {
+  display: block;
+  margin-bottom: 8px;
+  color: #263238;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+
+.form-section,
+.archivos-section {
+  margin-bottom: 22px;
+  padding: 24px;
+  background: #f8faf8;
+  border: 1px solid #dce5df;
+  border-radius: 10px;
+}
+
+.section-title,
+.archivos-section {
+  margin-bottom: 22px;
+}
+
+.section-title h3,
+.archivos-section h3 {
+  margin: 0 0 6px;
+  color: #087f23;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.section-title p,
+.archivos-section p {
+  margin: 0 0 20px;
+  color: #607d8b;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+/* =========================
+   CAMPOS
+========================= */
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.campo label,
+.archivo-campo label {
+  color: #263238;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* =========================
+   INPUTS Y SELECT
+========================= */
+
+.campo input,
+.campo select,
+.tipo-actualizacion select {
+  width: 100%;
+  min-height: 45px;
+  padding: 11px 13px;
+  background: #ffffff;
+  border: 1px solid #cfd8d3;
+  border-radius: 8px;
+  outline: none;
+  color: #263238;
+  font-family: inherit;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.campo input:focus,
+.campo select:focus,
+.tipo-actualizacion select:focus {
+  border-color: #087f23;
+  box-shadow: 0 0 0 3px rgba(8, 127, 35, 0.08);
+}
+
+/* =========================
+   ARCHIVOS
+========================= */
+
+.archivo-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.archivo-campo:last-child {
+  margin-bottom: 0;
+}
+
+.archivo-campo input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #cfd8d3;
+  border-radius: 8px;
+  color: #455a64;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.archivo-campo input[type="file"]:hover {
+  border-color: #087f23;
+}
+
+/* =========================
+   BOTÓN
+========================= */
+
+.btn-actualizar {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 5px;
+  padding: 13px 20px;
+  border: 2px solid #087f23;
+  border-radius: 8px;
+  background: #087f23;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-actualizar:hover {
+  background: #ffffff;
+  color: #087f23;
+  border-color: #087f23;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 700px) {
+
+  .actualizar-page {
+    padding: 25px 15px;
+  }
+
+  .actualizar-container {
+    padding: 25px 20px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+}
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 480px) {
+
+  .actualizar-page {
+    padding: 15px 10px;
+  }
+
+  .actualizar-container {
+    padding: 22px 15px;
+    border-radius: 10px;
+  }
+
+  .actualizar-header h2 {
+    font-size: 23px;
+  }
+
+  .actualizar-header p {
+    font-size: 13px;
+  }
+
+  .form-section,
+  .archivos-section,
+  .tipo-actualizacion {
+    padding: 17px;
+    border-radius: 8px;
+  }
+
+  .campo input,
+  .campo select,
+  .tipo-actualizacion select {
+    min-height: 43px;
+    font-size: 13px;
+  }
+
+  .btn-actualizar {
+    font-size: 14px;
+  }
+
+}

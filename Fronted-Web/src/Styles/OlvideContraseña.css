@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   FONDO
+========================= */
+
+.olvide-container {
+  min-height: 100vh;
+  width: 100%;
+
+  background: #087f23;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 20px;
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.olvide-card {
+  width: 100%;
+  max-width: 500px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 40px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.22);
+
+  text-align: center;
+}
+
+/* =========================
+   TÍTULO
+========================= */
+
+.olvide-card h2 {
+  margin: 0 0 15px;
+
+  color: #087f23;
+
+  font-size: 28px;
+  font-weight: 800;
+
+  text-align: center;
+}
+
+/* =========================
+   DESCRIPCIÓN
+========================= */
+
+.olvide-description {
+  margin: 0 0 28px;
+
+  color: #455a64;
+
+  font-size: 14px;
+
+  line-height: 21px;
+}
+
+/* =========================
+   LABEL
+========================= */
+
+.olvide-card label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #263238;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  text-align: left;
+}
+
+/* =========================
+   INPUT
+========================= */
+
+.olvide-card input {
+  width: 100%;
+
+  height: 48px;
+
+  padding: 0 14px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #cfd8d3;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #263238;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.olvide-card input:focus {
+  border-color: #087f23;
+
+  box-shadow:
+    0 0 0 3px rgba(8, 127, 35, 0.10);
+}
+
+/* =========================
+   BOTÓN CONFIRMAR
+========================= */
+
+.olvide-card button {
+  width: 100%;
+
+  height: 48px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #087f23;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.olvide-card button:hover {
+  background: #066b1d;
+}
+
+.olvide-card button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+/* =========================
+   MENSAJE
+========================= */
+
+.mensaje {
+  margin-top: 18px;
+
+  padding: 12px;
+
+  border-radius: 8px;
+
+  background: #e8f5e9;
+
+  border: 1px solid #a5d6a7;
+
+  color: #087f23;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  line-height: 19px;
+}
+
+/* =========================
+   VOLVER AL INICIO
+========================= */
+
+.volver-inicio {
+  display: block;
+
+  width: 100%;
+
+  margin-top: 16px;
+
+  padding: 12px;
+
+  border: 2px solid #087f23;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #087f23;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  transition: 0.2s;
+}
+
+.volver-inicio:hover {
+  background: #e8f5e9;
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+  .olvide-container {
+    padding: 20px 12px;
+  }
+
+  .olvide-card {
+    padding: 28px 20px;
+
+    border-radius: 15px;
+  }
+
+  .olvide-card h2 {
+    font-size: 25px;
+  }
+
+}

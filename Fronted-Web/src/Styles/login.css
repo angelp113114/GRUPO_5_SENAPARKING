@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+}
+
+.login-container {
+  min-height: 100vh;
+  width: 100%;
+
+  background: #087f23;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 620px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  padding: 35px 40px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.22);
+}
+
+/* =========================
+   TÍTULO
+========================= */
+
+.login-header {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.login-header h1 {
+  width: 100%;
+
+  margin: 0;
+
+  color: #087f23;
+
+  font-size: 30px;
+  font-weight: 800;
+
+  text-align: center;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+
+.login-section {
+  margin-bottom: 22px;
+
+  padding: 22px;
+
+  background: #f8faf8;
+
+  border: 1px solid #dce5df;
+
+  border-radius: 12px;
+}
+
+.login-section > label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #37474f;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.login-section h3 {
+  margin: 0 0 18px;
+
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid #dce5df;
+
+  color: #087f23;
+
+  font-size: 16px;
+  font-weight: 800;
+}
+
+/* =========================
+   ROLES
+========================= */
+
+.role-buttons {
+  display: flex;
+
+  gap: 10px;
+}
+
+.role-button {
+  flex: 1;
+
+  height: 44px;
+
+  border: 1px solid #cfd8d3;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #455a64;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.role-button:hover {
+  border-color: #087f23;
+}
+
+.role-button.active {
+  background: #e8f5e9;
+
+  border: 2px solid #087f23;
+
+  color: #087f23;
+}
+
+/* =========================
+   CAMPOS
+========================= */
+
+.login-fields {
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.login-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-group label {
+  margin-bottom: 7px;
+
+  color: #37474f;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.login-group input {
+  width: 100%;
+
+  height: 44px;
+
+  padding: 0 12px;
+
+  border: 1px solid #cfd8d3;
+
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  color: #263238;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+.login-group input:focus {
+  border-color: #087f23;
+
+  box-shadow: 0 0 0 3px rgba(8, 127, 35, 0.10);
+}
+
+/* =========================
+   OLVIDÉ CONTRASEÑA
+========================= */
+
+.forgot-container {
+  width: 100%;
+
+  text-align: right;
+
+  margin: -8px 0 18px;
+}
+
+.forgot-link {
+  color: #087f23;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   ERROR
+========================= */
+
+.login-error {
+  width: 100%;
+
+  margin-bottom: 15px;
+
+  padding: 11px;
+
+  border-radius: 7px;
+
+  background: #ffebee;
+
+  border: 1px solid #ffcdd2;
+
+  color: #c62828;
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+/* =========================
+   BOTÓN
+========================= */
+
+.login-button {
+  width: 100%;
+
+  height: 48px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #087f23;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.login-button:hover {
+  background: #066b1d;
+}
+
+.login-button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+/* =========================
+   VOLVER AL INICIO
+========================= */
+
+.back-home {
+  display: block;
+
+  width: 100%;
+
+  margin-top: 16px;
+
+  padding: 11px;
+
+  border: 2px solid #087f23;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #087f23;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: 0.2s;
+}
+
+.back-home:hover {
+  background: #e8f5e9;
+
+  color: #066b1d;
+}
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 650px) {
+
+  .login-container {
+    padding: 20px 12px;
+
+    align-items: flex-start;
+  }
+
+  .login-card {
+    padding: 25px 18px;
+
+    border-radius: 15px;
+  }
+
+  .login-header h1 {
+    font-size: 25px;
+  }
+
+  .role-buttons {
+    flex-direction: column;
+  }
+
+  .role-button {
+    width: 100%;
+  }
+
+  .login-section {
+    padding: 17px;
+  }
+}

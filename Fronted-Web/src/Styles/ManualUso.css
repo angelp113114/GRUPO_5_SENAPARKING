@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   PÁGINA
+========================= */
+
+.manual-container {
+  width: 100%;
+  min-height: calc(100vh - 75px);
+  padding: 40px 20px;
+
+  background: #087f23;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #263238;
+}
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+.manual-header {
+  width: 100%;
+  max-width: 850px;
+
+  margin: 0 auto 22px;
+  padding: 35px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+  border-radius: 14px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  text-align: center;
+}
+
+.manual-header h2 {
+  margin: 0 0 12px;
+
+  color: #087f23;
+
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.manual-header p {
+  max-width: 680px;
+
+  margin: 0 auto;
+
+  color: #607d8b;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.manual-header strong {
+  color: #087f23;
+}
+
+/* =========================
+   TARJETAS
+========================= */
+
+.manual-card {
+  width: 100%;
+  max-width: 850px;
+
+  margin: 0 auto 22px;
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+  border-radius: 10px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  transition: 0.2s ease;
+}
+
+.manual-card:hover {
+  border-color: #087f23;
+
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.11);
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+
+.manual-card h3 {
+  margin: 0 0 18px;
+
+  color: #087f23;
+
+  font-size: 19px;
+  font-weight: 800;
+}
+
+/* =========================
+   PÁRRAFOS
+========================= */
+
+.manual-card p {
+  margin: 0 0 18px;
+
+  color: #455a64;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* =========================
+   LISTAS
+========================= */
+
+.manual-card ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.manual-card li {
+  margin-bottom: 18px;
+
+  color: #263238;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.manual-card li:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
+   TEXTO DESTACADO
+========================= */
+
+.manual-card li strong {
+  color: #263238;
+
+  font-weight: 700;
+}
+
+.manual-card li span {
+  display: inline-block;
+
+  margin-top: 5px;
+
+  color: #607d8b;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =========================
+   CONSEJO
+========================= */
+
+.manual-tip {
+  width: 100%;
+  max-width: 850px;
+
+  margin: 0 auto;
+  padding: 22px;
+
+  background: #f8faf8;
+
+  border: 1px solid #dce5df;
+  border-left: 5px solid #087f23;
+
+  border-radius: 10px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.manual-tip h4 {
+  margin: 0 0 10px;
+
+  color: #087f23;
+
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.manual-tip p {
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.manual-tip strong {
+  color: #087f23;
+}
+
+/* =========================
+   ANIMACIÓN
+========================= */
+
+.manual-header,
+.manual-card,
+.manual-tip {
+  animation: aparecer 0.4s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 700px) {
+
+  .manual-container {
+    padding: 25px 15px;
+  }
+
+  .manual-header {
+    padding: 28px 22px;
+  }
+
+  .manual-card {
+    padding: 22px;
+  }
+
+  .manual-tip {
+    padding: 20px;
+  }
+
+}
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 480px) {
+
+  .manual-container {
+    padding: 15px 10px;
+  }
+
+  .manual-header {
+    padding: 24px 17px;
+
+    border-radius: 10px;
+  }
+
+  .manual-header h2 {
+    font-size: 22px;
+  }
+
+  .manual-header p {
+    font-size: 13px;
+  }
+
+  .manual-card {
+    padding: 18px;
+
+    border-radius: 8px;
+  }
+
+  .manual-card h3 {
+    font-size: 17px;
+  }
+
+  .manual-card li {
+    font-size: 13px;
+  }
+
+  .manual-card li span {
+    font-size: 12.5px;
+  }
+
+  .manual-tip {
+    padding: 17px;
+
+    border-radius: 8px;
+  }
+
+  .manual-tip h4 {
+    font-size: 15px;
+  }
+
+  .manual-tip p {
+    font-size: 13px;
+  }
+
+}

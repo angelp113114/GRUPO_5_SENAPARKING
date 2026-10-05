@@ -1,0 +1,193 @@
+.aprendiz-header {
+  width: 100%;
+  height: 75px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.aprendiz-header {
+  width: 100%;
+  height: 75px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0,0,0,.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+.menu-principal{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.menu-principal a{
+  text-decoration:none;
+  color:#222;
+  font-weight:600;
+  padding:10px 18px;
+  border-radius:8px;
+  transition:.3s;
+}
+
+.menu-principal a:hover{
+  background:#39b54a;
+  color:#fff;
+}
+
+.menu-principal .activo{
+  background:#39b54a;
+  color:#fff;
+}
+
+.menu-hamburguesa{
+  position:relative;
+}
+
+.hamburguesa{
+  width:48px;
+  height:48px;
+  border:none;
+  border-radius:8px;
+  background:#39b54a;
+  color:#fff;
+  font-size:24px;
+  cursor:pointer;
+}
+
+.hamburguesa:hover{
+  background:#2f9a3d;
+}
+
+.dropdown{
+  position:absolute;
+  top:60px;
+  right:0;
+  width:240px;
+  background:#fff;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 8px 20px rgba(0,0,0,.2);
+  display:flex;
+  flex-direction:column;
+}
+
+.dropdown a{
+  text-decoration:none;
+  color:#222;
+  padding:15px 18px;
+  transition:.3s;
+}
+
+.dropdown a:hover{
+  background:#39b54a;
+  color:#fff;
+}
+
+.dropdown button{
+  border:none;
+  background:#e53935;
+  color:#fff;
+  padding:15px;
+  cursor:pointer;
+  font-size:15px;
+  font-weight:bold;
+}
+
+.dropdown button:hover{
+  background:#c62828;
+}
+
+@media(max-width:900px){
+
+  .menu-principal{
+    display:none;
+  }
+
+  .aprendiz-header{
+    padding:0 20px;
+  }
+
+}
+
+.campana-container{
+    position:relative;
+    margin-right:15px;
+}
+
+.campana-btn{
+    width:48px;
+    height:48px;
+    border:none;
+    border-radius:8px;
+    background:#39b54a;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+    position:relative;
+}
+
+.badge{
+    position:absolute;
+    top:-6px;
+    right:-6px;
+    width:20px;
+    height:20px;
+    background:#e53935;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:11px;
+    font-weight:bold;
+}
+
+.panel-notificaciones{
+    position:absolute;
+    top:60px;
+    right:0;
+    width:340px;
+    max-height:420px;
+    overflow:auto;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+    padding:15px;
+    z-index:9999;
+}
+
+.notificacion-item{
+    border-bottom:1px solid #eee;
+    padding:10px 0;
+}
+
+.notificacion-item:last-child{
+    border:none;
+}

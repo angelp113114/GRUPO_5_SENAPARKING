@@ -1,0 +1,552 @@
+/* =========================================================
+   CENTROS DE FORMACIÓN
+========================================================= */
+
+.cf-container {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 35px;
+    font-family: "Segoe UI", sans-serif;
+
+    background: #087f23;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.cf-header {
+    width: 100%;
+    box-sizing: border-box;
+
+    background: #fff;
+
+    padding: 30px;
+    margin-bottom: 25px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+}
+
+.cf-header h1 {
+    margin: 0 0 10px;
+
+    color: #087f23;
+
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.cf-header p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.cf-error {
+    background: #ffe5e5;
+
+    color: #c62828;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   ACCIONES
+========================================================= */
+
+.cf-actions {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   CARD PRINCIPAL
+========================================================= */
+
+.cf-card {
+    width: 100%;
+    box-sizing: border-box;
+
+    background: #fff;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+}
+
+
+/* =========================================================
+   CABECERA CARD
+========================================================= */
+
+.cf-card-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.cf-card-header h2 {
+    margin: 0;
+
+    color: #087f23;
+
+    font-size: 23px;
+}
+
+
+/* =========================================================
+   TABLA
+========================================================= */
+
+.cf-table-container {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+.cf-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 800px;
+}
+
+.cf-table thead {
+    background: #087f23;
+}
+
+.cf-table th {
+    color: #fff;
+
+    padding: 14px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+.cf-table td {
+    padding: 13px;
+
+    border-bottom: 1px solid #e5e5e5;
+
+    text-align: center;
+
+    color: #333;
+
+    font-size: 14px;
+}
+
+.cf-table tbody tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.cf-table tbody tr:hover {
+    background: #f0fff3;
+}
+
+.cf-nombre {
+    font-weight: 600;
+    color: #087f23 !important;
+}
+
+
+/* =========================================================
+   ESTADO
+========================================================= */
+
+.cf-estado {
+    display: inline-block;
+
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    font-weight: 600;
+
+    font-size: 13px;
+}
+
+.cf-estado.activo {
+    background: #e5f7e9;
+
+    color: #087f23;
+}
+
+.cf-estado.inactivo {
+    background: #ffe5e5;
+
+    color: #c62828;
+}
+
+
+/* =========================================================
+   BOTONES
+========================================================= */
+
+.cf-btn-primary,
+.cf-btn-refresh,
+.cf-btn-edit,
+.cf-btn-delete,
+.cf-btn-cancel {
+    border: none;
+
+    border-radius: 9px;
+
+    padding: 10px 18px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-weight: 600;
+
+    transition: .25s;
+}
+
+
+/* VERDE */
+
+.cf-btn-primary {
+    background: #fff;
+
+    color: #087f23;
+}
+
+.cf-btn-primary:hover {
+    background: #066b1d;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(8, 127, 35, .3);
+}
+
+
+/* ACTUALIZAR */
+
+.cf-btn-refresh {
+    background: #e8f7eb;
+
+    color: #087f23;
+}
+
+.cf-btn-refresh:hover {
+    background: #d5f0da;
+}
+
+
+/* EDITAR */
+
+.cf-btn-edit {
+    background: #087f23;
+
+    color: #fff;
+}
+
+.cf-btn-edit:hover {
+    background: #066b1d;
+}
+
+
+/* ELIMINAR */
+
+.cf-btn-delete {
+    background: #dc3545;
+
+    color: #fff;
+}
+
+.cf-btn-delete:hover {
+    background: #b52a37;
+}
+
+
+/* CANCELAR */
+
+.cf-btn-cancel {
+    background: #777;
+
+    color: #fff;
+}
+
+.cf-btn-cancel:hover {
+    background: #555;
+}
+
+
+/* =========================================================
+   BOTONES TABLA
+========================================================= */
+
+.cf-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   LOADING / EMPTY
+========================================================= */
+
+.cf-loading {
+    text-align: center;
+
+    padding: 30px;
+
+    color: #666;
+}
+
+.cf-empty {
+    padding: 30px !important;
+
+    color: #777 !important;
+
+    font-style: italic;
+}
+
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+.cf-modal-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, .55);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    z-index: 9999;
+}
+
+.cf-modal {
+    width: 100%;
+
+    max-width: 550px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .3);
+}
+
+
+/* =========================================================
+   HEADER MODAL
+========================================================= */
+
+.cf-modal-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.cf-modal-header h2 {
+    margin: 0;
+
+    color: #087f23;
+
+    font-size: 23px;
+}
+
+.cf-close {
+    border: none;
+
+    background: transparent;
+
+    color: #777;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+.cf-close:hover {
+    color: #087f23;
+}
+
+
+/* =========================================================
+   FORMULARIO
+========================================================= */
+
+.cf-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.cf-form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.cf-form-group label {
+    color: #333;
+
+    font-weight: 600;
+
+    font-size: 14px;
+}
+
+.cf-form-group input,
+.cf-form-group select {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    background: #fff;
+}
+
+.cf-form-group input:focus,
+.cf-form-group select:focus {
+    border-color: #087f23;
+
+    box-shadow: 0 0 0 3px rgba(8, 127, 35, .12);
+}
+
+
+/* =========================================================
+   ACCIONES MODAL
+========================================================= */
+
+.cf-modal-actions {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .cf-container {
+        padding: 20px 15px;
+    }
+
+    .cf-header {
+        padding: 25px 15px;
+    }
+
+    .cf-header h1 {
+        font-size: 26px;
+    }
+
+    .cf-card {
+        padding: 15px;
+    }
+
+    .cf-card-header {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .cf-card-header h2 {
+        text-align: center;
+
+        font-size: 20px;
+    }
+
+    .cf-actions {
+        justify-content: center;
+    }
+
+    .cf-btn-primary {
+        width: 100%;
+    }
+
+    .cf-modal {
+        padding: 20px;
+    }
+
+    .cf-modal-actions {
+        flex-direction: column;
+    }
+
+    .cf-modal-actions button {
+        width: 100%;
+    }
+
+}

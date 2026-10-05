@@ -1,0 +1,71 @@
+{
+  "users": [
+    {
+      "email": "angel@gmail.com",
+      "password": "$2a$10$O7BUzbBvcuip3YVJlO7zuOsfRJ/.ov5/E9IqPgDub4YwOWrr4.SLO",
+      "id": 1
+    }
+  ],
+  "tipo-documentos": [
+    {
+      "id": "1",
+      "sigla": "CC",
+      "nombre_documento": "cédula de ciudadanía"
+    },
+    {
+      "id": "2",
+      "sigla": "CE",
+      "nombre_documento": "cédula de extranjería"
+    }
+  ],
+  "jornada": [
+    {
+      "id": 1,
+      "sigla_jornada": "D",
+      "nombre_jornada": "Jornada Diurna",
+      "descripcion": "lunes a viernes de 6:00 a.m. a 6:00 p.m.",
+      "imagen_url": null,
+      "estado": "ACTIVO"
+    },
+    {
+      "id": 2,
+      "sigla_jornada": "N",
+      "nombre_jornada": "Jornada nocturna",
+      "descripcion": "lunes a viernes de 6:00 p.m. a 10:00 p.m.",
+      "imagen_url": null,
+      "estado": "INACTIVO"
+    }
+  ],
+  "vehiculos_completo": [
+    {
+      "tipo": "bicicleta",
+      "id_centro_de_formacion": "3",
+      "marca": "ROCA",
+      "color": "Negro",
+      "serial": "BICI456",
+      "placa": "",
+      "cilindraje": "",
+      "modelo": "",
+      "foto_principal": "",
+      "foto_secundaria": "",
+      "id": 3
+    }
+  ],
+  "config-gr": [
+    {
+      "id": 1,
+      "art_direccion_gr": "Centro de Formación Norte",
+      "fecha_conexion": "2024-01-15",
+      "id_calcular": 101
+    }
+  ],
+  "entrada_salida_aprendiz": [
+    {
+      "id": 1,
+      "hora_entrada": "2024-01-20T08:00:00.000Z",
+      "hora_salida": "2026-04-14T00:01:46.486Z",
+      "id_aprendiz": 1001,
+      "id_codigo_gr": 1
+    }
+  ]
+}

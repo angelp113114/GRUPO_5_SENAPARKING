@@ -1,0 +1,642 @@
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   PÁGINA
+========================= */
+
+.du-container {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+
+  padding: 40px 25px;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  color: #263238;
+
+  background: #087f23;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.du-header {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto 25px;
+
+  padding: 30px 35px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+  border-radius: 14px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+  /* IMPORTANTE:
+     permite que el título quede a la izquierda
+     y el total de usuarios a la derecha */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 25px;
+}
+
+.du-header h1 {
+  margin: 0 0 10px;
+
+  color: #087f23;
+
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.du-header p {
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* =========================
+   CONTENIDO DEL TITULO
+========================= */
+
+.du-header-info {
+  flex: 1;
+  min-width: 0;
+}
+
+/* =========================
+   TOTAL
+========================= */
+
+.du-total {
+  min-width: 160px;
+
+  padding: 18px 25px;
+
+  background: #ffffff;
+
+  border-radius: 10px;
+
+  border: 1px solid #dce5df;
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.12);
+
+  text-align: center;
+
+  flex-shrink: 0;
+}
+
+.du-total span {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #607d8b;
+
+  font-size: 13px;
+}
+
+.du-total strong {
+  display: block;
+
+  color: #087f23;
+
+  font-size: 28px;
+
+  font-weight: 800;
+}
+
+/* =========================
+   TARJETA
+========================= */
+
+.du-card {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   CABECERA TARJETA
+========================= */
+
+.du-card-header {
+  padding-bottom: 20px;
+
+  margin-bottom: 20px;
+
+  border-bottom: 1px solid #dce5df;
+}
+
+.du-card-header h2 {
+  margin: 0 0 8px;
+
+  color: #087f23;
+
+  font-size: 22px;
+
+  font-weight: 800;
+}
+
+.du-card-header p {
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 14px;
+}
+
+/* =========================
+   BUSCADOR
+========================= */
+
+.du-search {
+  width: 100%;
+
+  margin-bottom: 25px;
+
+  display: flex;
+
+  gap: 10px;
+}
+
+.du-search input {
+  flex: 1;
+
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: 1px solid #cfd8d3;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  color: #263238;
+
+  background: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  transition: 0.2s ease;
+}
+
+.du-search input:focus {
+  border-color: #087f23;
+
+  box-shadow:
+    0 0 0 3px rgba(8, 127, 35, 0.12);
+}
+
+.du-search input::placeholder {
+  color: #90a4ae;
+}
+
+/* =========================
+   LIMPIAR
+========================= */
+
+.du-clear {
+  padding: 0 20px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #e8f5eb;
+
+  color: #087f23;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.du-clear:hover {
+  background: #d5ecd9;
+}
+
+/* =========================
+   TABLA
+========================= */
+
+.du-table-container {
+  width: 100%;
+
+  overflow-x: auto;
+
+  border: 1px solid #dce5df;
+
+  border-radius: 8px;
+}
+
+.du-table {
+  width: 100%;
+
+  min-width: 950px;
+
+  border-collapse: collapse;
+
+  background: #ffffff;
+}
+
+.du-table thead {
+  background: #f8faf8;
+}
+
+.du-table th {
+  padding: 15px 14px;
+
+  border-bottom: 2px solid #dce5df;
+
+  color: #455a64;
+
+  text-align: left;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+.du-table td {
+  padding: 15px 14px;
+
+  border-bottom: 1px solid #e5ebe7;
+
+  color: #455a64;
+
+  font-size: 13px;
+
+  vertical-align: middle;
+}
+
+.du-table tbody tr {
+  transition: 0.2s ease;
+}
+
+.du-table tbody tr:hover {
+  background: #f8faf8;
+}
+
+.du-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.du-table td strong {
+  color: #263238;
+
+  font-weight: 700;
+}
+
+/* =========================
+   ROL
+========================= */
+
+.du-role {
+  display: inline-block;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  text-transform: capitalize;
+}
+
+.du-role-administrador {
+  background: #e8f5eb;
+
+  color: #087f23;
+}
+
+.du-role-aprendiz {
+  background: #e8f5eb;
+
+  color: #087f23;
+}
+
+.du-role-guarda {
+  background: #eef5f0;
+
+  color: #455a64;
+}
+
+/* =========================
+   ESTADO
+========================= */
+
+.du-status {
+  display: inline-block;
+
+  padding: 6px 11px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  text-transform: capitalize;
+}
+
+.du-status.active {
+  background: #e8f5eb;
+
+  color: #087f23;
+}
+
+.du-status.blocked {
+  background: #ffebee;
+
+  color: #c62828;
+}
+
+/* =========================
+   PAGINACIÓN
+========================= */
+
+.du-pagination {
+  width: 100%;
+
+  margin-top: 25px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #dce5df;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 20px;
+}
+
+.du-pagination-info {
+  min-width: 130px;
+
+  text-align: center;
+
+  color: #607d8b;
+
+  font-size: 14px;
+}
+
+.du-pagination-info strong {
+  color: #263238;
+
+  font-weight: 800;
+}
+
+.du-pagination-btn {
+  min-width: 100px;
+
+  padding: 10px 16px;
+
+  border: 1px solid #cfd8d3;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #263238;
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.du-pagination-btn:hover:not(:disabled) {
+  background: #e8f5eb;
+
+  border-color: #087f23;
+
+  color: #087f23;
+}
+
+.du-pagination-btn:disabled {
+  opacity: 0.45;
+
+  cursor: not-allowed;
+}
+
+/* =========================
+   MENSAJES
+========================= */
+
+.du-message {
+  padding: 45px 20px;
+
+  text-align: center;
+
+  color: #607d8b;
+
+  font-size: 15px;
+}
+
+.du-empty {
+  padding: 50px 20px;
+
+  text-align: center;
+
+  background: #f8faf8;
+
+  border: 1px solid #e5ebe7;
+
+  border-radius: 8px;
+}
+
+.du-empty span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-size: 45px;
+}
+
+.du-empty p {
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 14px;
+}
+
+.du-error {
+  padding: 15px;
+
+  border-radius: 8px;
+
+  background: #ffebee;
+
+  border: 1px solid #ffcdd2;
+
+  color: #c62828;
+
+  font-size: 14px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .du-header {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+  .du-total {
+    width: 100%;
+  }
+
+  .du-card {
+    padding: 25px;
+  }
+
+}
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 650px) {
+
+  .du-container {
+    padding: 25px 15px;
+  }
+
+  .du-header {
+    padding: 25px 20px;
+  }
+
+  .du-header h1 {
+    font-size: 27px;
+  }
+
+  .du-header p {
+    font-size: 14px;
+  }
+
+  .du-card {
+    padding: 20px 15px;
+  }
+
+  .du-card-header h2 {
+    font-size: 20px;
+  }
+
+  .du-search {
+    flex-direction: column;
+  }
+
+  .du-search input {
+    padding: 13px;
+  }
+
+  .du-clear {
+    padding: 11px;
+  }
+
+  .du-pagination {
+    gap: 8px;
+  }
+
+  .du-pagination-btn {
+    min-width: auto;
+
+    padding: 9px 11px;
+
+    font-size: 12px;
+  }
+
+  .du-pagination-info {
+    min-width: 90px;
+
+    font-size: 12px;
+  }
+
+}
+
+/* =========================
+   MÓVIL PEQUEÑO
+========================= */
+
+@media (max-width: 400px) {
+
+  .du-container {
+    padding: 18px 10px;
+  }
+
+  .du-header {
+    padding: 22px 15px;
+  }
+
+  .du-header h1 {
+    font-size: 23px;
+  }
+
+  .du-card {
+    padding: 18px 12px;
+  }
+
+  .du-pagination {
+    gap: 5px;
+  }
+
+  .du-pagination-btn {
+    padding: 8px;
+  }
+
+  .du-pagination-info {
+    min-width: 75px;
+
+    font-size: 11px;
+  }
+
+}

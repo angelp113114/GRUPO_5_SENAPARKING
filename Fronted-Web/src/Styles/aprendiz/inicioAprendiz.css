@@ -1,0 +1,367 @@
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   PÁGINA
+========================= */
+
+.inicio-aprendiz {
+  width: 100%;
+  min-height: calc(100vh - 75px);
+  padding: 40px 20px;
+  background: #087f23;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #263238;
+}
+
+/* =========================
+   BANNER DE BIENVENIDA
+========================= */
+
+.hero-inicio {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 30px;
+
+  padding: 35px;
+  background: #ffffff;
+
+  border-radius: 14px;
+  border: 1px solid #dce5df;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-inicio h1 {
+  margin: 0 0 12px;
+
+  color: #087f23;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.hero-inicio p {
+  max-width: 700px;
+  margin: 0;
+
+  color: #607d8b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.hero-icono {
+  flex-shrink: 0;
+
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f1f8f3;
+  color: #087f23;
+
+  font-size: 55px;
+}
+
+/* =========================
+   SECCIÓN PRINCIPAL
+========================= */
+
+.inicio-aprendiz > section:not(.hero-inicio):not(.info-box) {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 30px;
+}
+
+.inicio-aprendiz > section:not(.hero-inicio):not(.info-box) > h2 {
+  margin: 0 0 20px;
+
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+/* =========================
+   TARJETAS
+========================= */
+
+.cards-acceso {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.acceso-card {
+  min-width: 0;
+
+  padding: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+  border-radius: 10px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  text-align: center;
+
+  transition: 0.2s;
+}
+
+.acceso-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #087f23;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================
+   ICONOS
+========================= */
+
+.icono-card {
+  width: 65px;
+  height: 65px;
+
+  margin: 0 auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f1f8f3;
+  color: #087f23;
+
+  font-size: 30px;
+}
+
+/* =========================
+   TÍTULOS TARJETAS
+========================= */
+
+.acceso-card h3 {
+  margin: 0 0 10px;
+
+  color: #087f23;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+/* =========================
+   TEXTO TARJETAS
+========================= */
+
+.acceso-card p {
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* =========================
+   INFORMACIÓN IMPORTANTE
+========================= */
+
+.info-box {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 30px;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+  border: 1px solid #dce5df;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.info-box h2 {
+  margin: 0 0 20px;
+
+  color: #087f23;
+
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.info-box ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+.info-box li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 16px;
+
+  background: #f8faf8;
+
+  border: 1px solid #dce5df;
+  border-radius: 8px;
+
+  color: #455a64;
+
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+.info-box li:hover {
+  background: #eef7f0;
+  border-color: #087f23;
+}
+
+.info-box li span {
+  min-width: 28px;
+
+  display: flex;
+  justify-content: center;
+
+  font-size: 19px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .cards-acceso {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-inicio {
+    padding: 30px;
+  }
+
+}
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 700px) {
+
+  .inicio-aprendiz {
+    padding: 25px 15px;
+  }
+
+  .hero-inicio {
+    padding: 25px 20px;
+
+    flex-direction: column;
+    text-align: center;
+
+    gap: 20px;
+  }
+
+  .hero-inicio h1 {
+    font-size: 25px;
+  }
+
+  .hero-inicio p {
+    font-size: 13px;
+  }
+
+  .hero-icono {
+    width: 80px;
+    height: 80px;
+
+    font-size: 42px;
+  }
+
+  .cards-acceso {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .info-box {
+    padding: 22px 18px;
+  }
+
+}
+
+/* =========================
+   MÓVIL PEQUEÑO
+========================= */
+
+@media (max-width: 480px) {
+
+  .inicio-aprendiz {
+    padding: 15px 10px;
+  }
+
+  .hero-inicio {
+    padding: 22px 15px;
+    border-radius: 10px;
+  }
+
+  .hero-inicio h1 {
+    font-size: 22px;
+  }
+
+  .hero-inicio p {
+    font-size: 13px;
+  }
+
+  .hero-icono {
+    width: 70px;
+    height: 70px;
+
+    font-size: 36px;
+  }
+
+  .acceso-card {
+    padding: 20px 17px;
+  }
+
+  .icono-card {
+    width: 55px;
+    height: 55px;
+
+    font-size: 25px;
+  }
+
+  .info-box {
+    padding: 20px 15px;
+    border-radius: 10px;
+  }
+
+  .info-box h2 {
+    font-size: 18px;
+  }
+
+  .info-box li {
+    padding: 12px;
+
+    font-size: 13px;
+  }
+
+}

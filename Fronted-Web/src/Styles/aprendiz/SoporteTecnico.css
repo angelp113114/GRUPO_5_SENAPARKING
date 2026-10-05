@@ -1,0 +1,736 @@
+* {
+  box-sizing: border-box;
+}
+
+/* =====================================================
+   PÁGINA
+===================================================== */
+
+.soporte-container {
+  width: 100%;
+  min-height: calc(100vh - 75px);
+
+  padding: 40px 20px;
+
+  background: #087f23;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  color: #263238;
+}
+
+
+/* =====================================================
+   ENCABEZADO
+===================================================== */
+
+.soporte-header {
+  width: 100%;
+  max-width: 1000px;
+
+  margin: 0 auto 25px;
+
+  padding: 30px 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+
+  border-radius: 14px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================================
+   TEXTO ENCABEZADO
+===================================================== */
+
+.soporte-label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #087f23;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.soporte-header h2 {
+  margin: 0 0 10px;
+
+  color: #087f23;
+
+  font-size: 28px;
+
+  font-weight: 800;
+}
+
+.soporte-header p {
+  max-width: 700px;
+
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  text-align: left;
+}
+
+
+/* =====================================================
+   ICONO
+===================================================== */
+
+.soporte-icon {
+  width: 65px;
+  min-width: 65px;
+
+  height: 65px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #eaf7ef;
+
+  border-radius: 12px;
+
+  color: #087f23;
+
+  font-size: 30px;
+}
+
+
+/* =====================================================
+   TARJETAS PRINCIPALES
+===================================================== */
+
+.soporte-card {
+  width: 100%;
+
+  max-width: 1000px;
+
+  margin: 0 auto 25px;
+
+  padding: 28px 32px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+
+  border-radius: 14px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================================
+   TITULOS DE LAS TARJETAS
+===================================================== */
+
+.soporte-card h3 {
+  margin: 0 0 7px;
+
+  color: #087f23;
+
+  font-size: 20px;
+
+  font-weight: 800;
+}
+
+.soporte-descripcion {
+  margin: 0 0 22px;
+
+  color: #607d8b;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   FORMULARIO
+===================================================== */
+
+.soporte-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+/* =====================================================
+   CAMPOS
+===================================================== */
+
+.campo-soporte {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.campo-soporte label {
+  color: #455a64;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.campo-soporte input,
+.campo-soporte textarea {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  background: #ffffff;
+
+  border: 1px solid #cfd8d3;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  color: #263238;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+.campo-soporte input {
+  height: 45px;
+}
+
+.campo-soporte textarea {
+  min-height: 130px;
+
+  resize: vertical;
+}
+
+.campo-soporte input::placeholder,
+.campo-soporte textarea::placeholder {
+  color: #9aa7ad;
+}
+
+
+/* =====================================================
+   FOCUS
+===================================================== */
+
+.campo-soporte input:focus,
+.campo-soporte textarea:focus {
+  border-color: #087f23;
+
+  box-shadow: 0 0 0 3px rgba(8, 127, 35, 0.10);
+}
+
+
+/* =====================================================
+   BOTÓN ENVIAR
+===================================================== */
+
+.soporte-form button {
+  width: 100%;
+
+  min-height: 45px;
+
+  margin-top: 5px;
+
+  padding: 12px 20px;
+
+  border: 2px solid #087f23;
+
+  border-radius: 8px;
+
+  background: #087f23;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.soporte-form button:hover {
+  background: #ffffff;
+
+  color: #087f23;
+}
+
+.soporte-form button:active {
+  transform: scale(0.99);
+}
+
+
+/* =====================================================
+   TITULO DE SECCIONES
+===================================================== */
+
+.seccion-titulo {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 22px;
+}
+
+.seccion-titulo p {
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   CONTADOR
+===================================================== */
+
+.contador-soporte {
+  min-width: 40px;
+
+  height: 40px;
+
+  padding: 0 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #eaf7ef;
+
+  border: 1px solid #cce6d3;
+
+  border-radius: 20px;
+
+  color: #087f23;
+
+  font-size: 14px;
+
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   LISTA DE TICKETS
+===================================================== */
+
+.tickets {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+/* =====================================================
+   TICKET
+===================================================== */
+
+.ticket {
+  padding: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+
+  border-left: 5px solid #f39c12;
+
+  border-radius: 10px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+  transition: 0.2s;
+}
+
+.ticket:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================================
+   TICKET RESUELTO
+===================================================== */
+
+.ticket-resuelto {
+  border-left-color: #087f23;
+}
+
+
+/* =====================================================
+   PARTE SUPERIOR DEL TICKET
+===================================================== */
+
+.ticket-superior {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 18px;
+}
+
+
+/* =====================================================
+   ICONO DEL TICKET
+===================================================== */
+
+.ticket-icon {
+  width: 45px;
+
+  min-width: 45px;
+
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #eaf7ef;
+
+  border-radius: 10px;
+
+  font-size: 21px;
+}
+
+
+/* =====================================================
+   TITULO DEL TICKET
+===================================================== */
+
+.ticket-superior h4 {
+  margin: 0 0 7px;
+
+  color: #263238;
+
+  font-size: 16px;
+
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   ESTADOS
+===================================================== */
+
+.estado {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 5px 11px;
+
+  border-radius: 20px;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  text-transform: capitalize;
+}
+
+
+/* PENDIENTE */
+
+.estado.Pendiente,
+.estado.pendiente {
+  background: #fff4df;
+
+  border: 1px solid #f5d59b;
+
+  color: #d68910;
+}
+
+
+/* EN PROCESO */
+
+.estado.En\ proceso,
+.estado.en\ proceso {
+  background: #e8f1ff;
+
+  border: 1px solid #bdd3f5;
+
+  color: #2864a7;
+}
+
+
+/* RESUELTO */
+
+.estado.Resuelto,
+.estado.resuelto {
+  background: #eaf7ef;
+
+  border: 1px solid #cce6d3;
+
+  color: #087f23;
+}
+
+
+/* =====================================================
+   DESCRIPCIÓN
+===================================================== */
+
+.ticket-descripcion {
+  padding: 15px;
+
+  background: #f7faf8;
+
+  border: 1px solid #edf1ee;
+
+  border-radius: 8px;
+}
+
+.ticket-descripcion strong {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #455a64;
+
+  font-size: 13px;
+
+  font-weight: 800;
+}
+
+.ticket-descripcion p {
+  margin: 0;
+
+  color: #546e7a;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  white-space: pre-wrap;
+
+  word-break: break-word;
+}
+
+
+/* =====================================================
+   RESPUESTA DEL ADMINISTRADOR
+===================================================== */
+
+.respuesta {
+  margin-top: 15px;
+
+  padding: 16px;
+
+  background: #eaf7ef;
+
+  border: 1px solid #cce6d3;
+
+  border-left: 4px solid #087f23;
+
+  border-radius: 8px;
+}
+
+.respuesta-titulo {
+  margin-bottom: 7px;
+
+  color: #087f23;
+
+  font-size: 13px;
+
+  font-weight: 800;
+}
+
+.respuesta p {
+  margin: 0;
+
+  color: #455a64;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  white-space: pre-wrap;
+
+  word-break: break-word;
+}
+
+
+/* =====================================================
+   VACÍO
+===================================================== */
+
+.soporte-vacio {
+  padding: 40px 20px;
+
+  background: #f8faf9;
+
+  border: 1px dashed #cfd8d3;
+
+  border-radius: 10px;
+
+  text-align: center;
+}
+
+.soporte-vacio span {
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-size: 38px;
+}
+
+.soporte-vacio p {
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 14px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .soporte-container {
+    padding: 25px 15px;
+  }
+
+  .soporte-header {
+    padding: 25px 22px;
+  }
+
+  .soporte-card {
+    padding: 24px 22px;
+  }
+
+}
+
+
+/* =====================================================
+   MÓVIL
+===================================================== */
+
+@media (max-width: 480px) {
+
+  .soporte-container {
+    padding: 15px 10px;
+  }
+
+  .soporte-header {
+    padding: 22px 18px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    border-radius: 10px;
+  }
+
+  .soporte-header h2 {
+    font-size: 23px;
+  }
+
+  .soporte-header p {
+    font-size: 13px;
+  }
+
+  .soporte-icon {
+    width: 50px;
+
+    min-width: 50px;
+
+    height: 50px;
+
+    font-size: 24px;
+  }
+
+  .soporte-card {
+    padding: 20px 16px;
+
+    border-radius: 10px;
+  }
+
+  .soporte-card h3 {
+    font-size: 18px;
+  }
+
+  .seccion-titulo {
+    align-items: flex-start;
+  }
+
+  .ticket {
+    padding: 16px;
+  }
+
+  .ticket-superior {
+    align-items: flex-start;
+  }
+
+  .ticket-icon {
+    width: 40px;
+
+    min-width: 40px;
+
+    height: 40px;
+  }
+
+  .ticket-superior h4 {
+    font-size: 15px;
+  }
+
+  .ticket-descripcion p,
+  .respuesta p {
+    font-size: 13px;
+  }
+
+}

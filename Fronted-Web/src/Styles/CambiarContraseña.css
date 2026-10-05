@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+.cambiar-container {
+  min-height: 100vh;
+  width: 100%;
+
+  background: #087f23;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px 20px;
+}
+
+.cambiar-card {
+  width: 100%;
+  max-width: 500px;
+
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 40px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.22);
+
+  text-align: center;
+}
+
+.cambiar-card h2 {
+  margin: 0 0 15px;
+
+  color: #087f23;
+
+  font-size: 28px;
+
+  font-weight: 800;
+}
+
+.cambiar-description {
+  margin-bottom: 28px;
+
+  color: #455a64;
+
+  font-size: 14px;
+
+  line-height: 21px;
+}
+
+.cambiar-card label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #263238;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  text-align: left;
+}
+
+.cambiar-card input {
+  width: 100%;
+
+  height: 48px;
+
+  padding: 0 14px;
+
+  margin-bottom: 20px;
+
+  border: 1px solid #cfd8d3;
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: #263238;
+
+  font-size: 14px;
+
+  outline: none;
+}
+
+.cambiar-card input:focus {
+  border-color: #087f23;
+
+  box-shadow:
+    0 0 0 3px rgba(8, 127, 35, 0.1);
+}
+
+.cambiar-card button {
+  width: 100%;
+
+  height: 48px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #087f23;
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.cambiar-card button:hover {
+  background: #066b1d;
+}
+
+.cambiar-card button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+.cambiar-error {
+  margin-bottom: 15px;
+
+  padding: 11px;
+
+  border-radius: 8px;
+
+  background: #ffebee;
+
+  border: 1px solid #ffcdd2;
+
+  color: #c62828;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.cambiar-success {
+  margin-bottom: 15px;
+
+  padding: 11px;
+
+  border-radius: 8px;
+
+  background: #e8f5e9;
+
+  border: 1px solid #a5d6a7;
+
+  color: #087f23;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+.volver-login {
+  display: block;
+
+  width: 100%;
+
+  margin-top: 16px;
+
+  padding: 12px;
+
+  border: 2px solid #087f23;
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: #087f23;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+.volver-login:hover {
+  background: #e8f5e9;
+}
+
+@media (max-width: 600px) {
+
+  .cambiar-container {
+    padding: 20px 12px;
+  }
+
+  .cambiar-card {
+    padding: 28px 20px;
+  }
+
+  .cambiar-card h2 {
+    font-size: 25px;
+  }
+}

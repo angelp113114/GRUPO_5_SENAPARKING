@@ -1,0 +1,675 @@
+* {
+  box-sizing: border-box;
+}
+
+/* =========================
+   PÁGINA
+========================= */
+
+.adminSoporte {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+
+  padding: 40px 25px;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  color: #263238;
+
+  background: #087f23;
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.adminSoporte > * {
+  width: 100%;
+  max-width: 1200px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =========================
+   TITULO
+========================= */
+
+.soporte-titulo {
+  background: #ffffff;
+
+  color: #263238;
+
+  padding: 35px;
+
+  border-radius: 14px;
+
+  border: 1px solid #dce5df;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.12);
+
+  margin-bottom: 20px;
+}
+
+.soporte-titulo h2 {
+  margin: 0 0 10px;
+
+  color: #087f23;
+
+  font-size: 32px;
+
+  font-weight: 800;
+}
+
+.soporte-titulo p {
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   FILTRO
+========================= */
+
+.soporte-filtro {
+  background: #ffffff;
+
+  padding: 22px;
+
+  border-radius: 10px;
+
+  border: 1px solid #dce5df;
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.08);
+
+  margin-bottom: 10px;
+}
+
+.soporte-filtro label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #263238;
+
+  font-size: 14px;
+
+  font-weight: 800;
+}
+
+.soporte-filtro input {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border: 1px solid #dce5df;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #263238;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  font-size: 14px;
+
+  transition: 0.2s ease;
+}
+
+.soporte-filtro input:focus {
+  border-color: #087f23;
+
+  box-shadow:
+    0 0 0 3px rgba(8, 127, 35, 0.12);
+}
+
+.soporte-filtro input::placeholder {
+  color: #90a4ae;
+}
+
+
+/* =========================
+   LIMPIAR FILTRO
+========================= */
+
+.btn-limpiar-filtro {
+  margin-top: 10px;
+
+  padding: 8px 16px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #e8f5eb;
+
+  color: #087f23;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.btn-limpiar-filtro:hover {
+  background: #d2ead8;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================
+   RESULTADOS
+========================= */
+
+.soporte-resultados {
+  margin-bottom: 15px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+}
+
+.soporte-resultados p {
+  margin: 0;
+}
+
+.soporte-resultados strong {
+  color: #ffffff;
+
+  font-weight: 800;
+}
+
+
+/* =========================
+   TARJETA SOPORTE
+========================= */
+
+.cardSoporte {
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+
+  border-top: 5px solid #087f23;
+
+  border-radius: 10px;
+
+  padding: 28px 25px;
+
+  margin-bottom: 18px;
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.08);
+
+  transition: 0.2s ease;
+}
+
+.cardSoporte:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================
+   NOMBRE USUARIO
+========================= */
+
+.cardSoporte h3 {
+  margin: 0 0 18px;
+
+  color: #087f23;
+
+  font-size: 21px;
+
+  font-weight: 800;
+}
+
+
+/* =========================
+   INFORMACIÓN
+========================= */
+
+.informacion-soporte {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 10px 25px;
+
+  margin-bottom: 20px;
+
+  padding: 18px;
+
+  background: #f8faf8;
+
+  border: 1px solid #e5ebe7;
+
+  border-radius: 8px;
+}
+
+.informacion-soporte p {
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+.informacion-soporte strong {
+  color: #263238;
+}
+
+
+/* =========================
+   DESCRIPCIÓN
+========================= */
+
+.descripcion-soporte {
+  padding: 18px;
+
+  margin-bottom: 20px;
+
+  background: #f8faf8;
+
+  border: 1px solid #e5ebe7;
+
+  border-radius: 8px;
+}
+
+.descripcion-soporte h4 {
+  margin: 0 0 10px;
+
+  color: #087f23;
+
+  font-size: 16px;
+
+  font-weight: 800;
+}
+
+.descripcion-soporte p {
+  margin: 0;
+
+  color: #455a64;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  white-space: pre-wrap;
+
+  word-break: break-word;
+}
+
+
+/* =========================
+   CAMPOS
+========================= */
+
+.campo-soporte {
+  margin-bottom: 18px;
+}
+
+.campo-soporte label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #263238;
+
+  font-size: 14px;
+
+  font-weight: 800;
+}
+
+.campo-soporte select,
+.campo-soporte textarea {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  border: 1px solid #dce5df;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: #263238;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  font-size: 14px;
+
+  transition: 0.2s ease;
+}
+
+.campo-soporte select:focus,
+.campo-soporte textarea:focus {
+  border-color: #087f23;
+
+  box-shadow:
+    0 0 0 3px rgba(8, 127, 35, 0.12);
+}
+
+.campo-soporte textarea {
+  min-height: 120px;
+
+  resize: vertical;
+}
+
+
+/* =========================
+   BOTÓN GUARDAR
+========================= */
+
+.acciones-soporte {
+  display: flex;
+
+  justify-content: flex-end;
+
+  margin-top: 5px;
+}
+
+.acciones-soporte button {
+  padding: 11px 22px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #087f23;
+
+  color: #ffffff;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.acciones-soporte button:hover {
+  background: #06691d;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 5px 12px rgba(8, 127, 35, 0.25);
+}
+
+
+/* =========================
+   VACÍO / CARGANDO
+========================= */
+
+.soporte-vacio {
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+
+  border-radius: 10px;
+
+  padding: 45px 25px;
+
+  text-align: center;
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.soporte-vacio p {
+  margin: 0;
+
+  color: #607d8b;
+
+  font-size: 15px;
+}
+
+
+/* =========================
+   PAGINACIÓN
+========================= */
+
+.soporte-paginacion {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 25px auto 0;
+
+  padding: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce5df;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 25px;
+}
+
+
+/* =========================
+   BOTONES PAGINACIÓN
+========================= */
+
+.soporte-paginacion button {
+  padding: 10px 18px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #087f23;
+
+  color: #ffffff;
+
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.soporte-paginacion button:hover:not(:disabled) {
+  background: #06691d;
+
+  transform: translateY(-2px);
+}
+
+.soporte-paginacion button:disabled {
+  background: #dce5df;
+
+  color: #90a4ae;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* =========================
+   INFORMACIÓN PAGINACIÓN
+========================= */
+
+.paginacion-info {
+  min-width: 150px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+
+  color: #607d8b;
+
+  font-size: 14px;
+
+  text-align: center;
+}
+
+.paginacion-info strong {
+  color: #087f23;
+
+  font-size: 17px;
+
+  font-weight: 800;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .adminSoporte {
+    padding: 30px 20px;
+  }
+
+  .informacion-soporte {
+    grid-template-columns: 1fr;
+  }
+
+  .soporte-titulo {
+    padding: 30px;
+  }
+
+}
+
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 650px) {
+
+  .adminSoporte {
+    padding: 25px 15px;
+  }
+
+  .soporte-titulo {
+    padding: 25px 20px;
+
+    text-align: center;
+  }
+
+  .soporte-titulo h2 {
+    font-size: 26px;
+  }
+
+  .soporte-titulo p {
+    font-size: 14px;
+  }
+
+  .cardSoporte {
+    padding: 22px 18px;
+  }
+
+  .informacion-soporte {
+    grid-template-columns: 1fr;
+
+    padding: 15px;
+  }
+
+  .soporte-filtro {
+    padding: 18px;
+  }
+
+  .soporte-paginacion {
+    gap: 10px;
+
+    padding: 15px;
+  }
+
+  .soporte-paginacion button {
+    padding: 9px 11px;
+
+    font-size: 12px;
+  }
+
+  .paginacion-info {
+    min-width: 90px;
+
+    font-size: 12px;
+  }
+
+  .paginacion-info strong {
+    font-size: 15px;
+  }
+
+}
+
+
+/* =========================
+   MÓVIL PEQUEÑO
+========================= */
+
+@media (max-width: 400px) {
+
+  .adminSoporte {
+    padding: 18px 10px;
+  }
+
+  .soporte-titulo {
+    padding: 22px 15px;
+  }
+
+  .soporte-titulo h2 {
+    font-size: 22px;
+  }
+
+  .cardSoporte {
+    padding: 18px 15px;
+  }
+
+  .soporte-paginacion {
+    flex-wrap: wrap;
+  }
+
+  .soporte-paginacion button {
+    flex: 1;
+  }
+
+}
